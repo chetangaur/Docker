@@ -1,0 +1,46 @@
+Docker
+
+Docker is a automation tool that helps in easy deployement 
+of software and run applications using 
+containers.
+
+Containers:-
+     Containers allows a developer to package up an application
+with all the parts its need, such as library,database and others, and
+ship them all togerther as a single package.
+
+# How docker works
+
+Docker forms a docker image using dockerfile.
+  Dockerfile consists of application , requirement etc.
+Then this docker image launch a docker container which is a run time instance
+
+@ To find docker images docker hub is one of the best source.
+
+Docker architecture contains 
+1. Docker Client
+2. Docker Server
+
+Basics terminology that you must aware of:-
+1. Dockerfile
+2. Docker images
+3. Docker Containers
+4. Docker Hub/ Registry
+5. Docker Client
+6. Docker Server
+7. Docker Engine
+
+
+# Benefits of using Docker
+
+1. Build app only once
+2. No worries that the application will not perform the same way it did on testing env
+3.Portability
+4.Version Control
+5.Isolation
+6.Productivity
+7.Docker simplifies
+DevOps
+
+# if you don't want to install docker on your OS then you can work on it online through "play with docker".
+
