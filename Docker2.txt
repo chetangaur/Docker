@@ -1,0 +1,26 @@
+Docker Basic Command
+
+> docker version         To check the version
+  docker -v              of docker
+> docker info            It gives information about
+                         docker like How many containers present
+                         , running or stopped and details about 
+                         image and much more.
+> docker --help          It will help you with docker command 
+                         and tells you different commands which
+                         consisit docker
+> docker login           It will redirect you to docker hub where
+                         you can download images as per your need.
+>docker pull imagename   To pull desiered image from docker hub.
+
+> docker rmi imageID     To remove docker image
+> docker images -q       To see the id of running docker 
+> docker ps              To check the running containers
+> docker run imagename   To run a container of desiered image.
+> docker run -it ubuntu  Make interactive terminal 
+> docker start
+> docker stop 
+
+> docker stats            It gives detailed stats about containers
+> docker system df        It shows memory usage and many details
+> docker system prune     It will restore memory.
