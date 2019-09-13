@@ -1,0 +1,16 @@
+Docker Images related command
+1. docker images --help  >> To check assosiated command with images
+2. docker pull image     >> To pull some specific image from docker hub
+3. docker images         >> Shows images that you pulled already and their details
+4. docker images -q      >> Show image id only
+5. docker images -f "dangling=true" >> show images whose container are in running state
+6. docker run image      >> to run a container
+for interactive terminal 
+   docker run --it ubuntu bash
+7. docker inspect image-name  >> Show all details about image
+
+Image :- its actually a set of many layers or we can say layered of filesystem which 
+         are stacked on top of each other.
+8. docker rmi image-name  >> to close images , you have to close a running container of that image.
+9. docker stop container-name >> to close a container
+ 
