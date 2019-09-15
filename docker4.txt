@@ -1,0 +1,40 @@
+Prob- 1. How to start jenkins server on docker container
+      2. Start and stop jenkins container
+      3. How to set jenkins home on docker volume and host machine
+
+jenkins - Jenkins is a free and open source automation server written in Java.
+          Jenkins helps to automate the non-human part of the software development process,
+          with continuous integration and facilitating technical aspects of continuous delivery.
+
+Use - we can share data b/w multiple containers.
+
+# To start jenkins server on docker volume:-
+
+ 1. docker pull jenkins                >> to extract jenkins from docker hub
+ 2. docker volume create "VolumeName"  >> to create a virtual docker volume 
+ 3. docker volume ls                   >> show volumes present
+ 4. docker volume inspect "VolumeName" >> It will show breif details of respective volume 
+ 5. docker run --name MyJenkins1 -p 8080:8080 -p 50000:50000 -v myjenkins:/var/jenkins_home jenkins
+                                       >> This will run myjenkins1 on localhost 8080 and download all requirement
+    > login with help of password given by above command 
+ 6. docker inspect MyJenkins1
+
+# You can make another container and run jenkins with differnt name but can acess same data , that how we can share data b/w multiple containers.
+
+## To start jenkins server on host machine
+ 1. docker pull jenkins
+ 2. docker run -p 8080:8080 -p 50000:50000 jenkins
+    docker run --name MyJenkins -p 8080:8080 -p 50000:50000 -v /Users/username/Desktop/Jenkins_Home:/var/jenkins_home jenkins
+    docker run --name MyJenkins2 -p 9090:8080 -p 50000:50000 -v /Users/username/Desktop/Jenkins_Home:/var/jenkins_home jenkins
+
+
+In case you face issues like installing plugins on this Jenkins, can setup jenkins with this command:
+$ docker run -u root --rm -p 8080:8080 -v /srv/jenkins-data:/var/jenkins_home   -v /var/run/docker.sock:/var/run/docker.sock   --name jenkins jenkinsci/blueocean
+
+Bonus info-:
+
+1. docker pause container-name/id    >> it will pause your container
+                                        (you give input but it does not show and proceed but\
+                                         just store the input)
+2. docker unpause container-name/id  >> it will resume the container and show the store data that 
+                                        occurs  when the container is closed.
