@@ -1,0 +1,23 @@
+Prob-:
+1. What is dockerfile
+2. How to create Dockerfile
+3. How to build image from Dockerfile
+4. Basic Commands
+
+Dockerfile-:
+    A textfile with instructions to build image
+    Automation of Docker Image Creation
+
+Step1 - Create a file named Dockerfile  >> mkdir "dir-name"
+                                           cd dir-name/
+                                           touch Dockerfile-name
+                                           vim  Dockerfile-name
+Step2 - Add instructions in Dockerfile  >>
+                                           FROM imagename
+                                           MAINTAINER yourname <your-email>
+                                           RUN apt-get update
+                                           CMD ["  gffdsfdsfw "]
+Step3 - Build dockerfile to create image >>
+                                           docker build -t name_of_image:tag .
+Step4 - Run image to create container    >> 
+                                           docker run image-id
