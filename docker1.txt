@@ -42,5 +42,5 @@ Basics terminology that you must aware of:-
 7.Docker simplifies
 DevOps
 
-# if you don't want to install docker on your OS then you can work on it online through "play with docker".
+# if you don't want to install docker on your OS then you can work on it online through "play with docker" or katakuda.
 
