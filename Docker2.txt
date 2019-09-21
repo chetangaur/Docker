@@ -18,8 +18,8 @@ Docker Basic Command
 > docker ps              To check the running containers
 > docker run imagename   To run a container of desiered image.
 > docker run -it ubuntu  Make interactive terminal 
-> docker start
-> docker stop 
+> docker start container-Name/Id        It will start mentioned container 
+> docker stop  container-Name/Id        It will stop mentioned container
 
 > docker stats            It gives detailed stats about containers
 > docker system df        It shows memory usage and many details
