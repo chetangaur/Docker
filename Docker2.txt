@@ -1,7 +1,7 @@
 Docker Basic Command
 
 > docker version         To check the version
-  docker -v              of docker
+  docker -v              Version of docker
 > docker info            It gives information about
                          docker like How many containers present
                          , running or stopped and details about 
