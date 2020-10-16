@@ -1,10 +1,10 @@
-Docker
+# Docker
 
 Docker is a automation tool that helps in easy deployement 
 of software and run applications using 
 containers.
 
-Containers:-
+# Containers:-
      Containers allows a developer to package up an application
 with all the parts its need, such as library,database and others, and
 ship them all togerther as a single package.
